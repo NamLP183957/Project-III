@@ -1,0 +1,37 @@
+.link_mark {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+.img_description {
+  width: 100%;
+  max-height: 50vh;
+}
+
+.notice {
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.link_btn {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: var(--dark-second-color);
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.link_btn:hover {
+  opacity: 0.8;
+}
+
+.link_btn.right {
+  left: 100%;
+  transform: translateX(-100%);
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,243 @@
+.form-title {
+  /* text-align: center; */
+  font-size: 2rem;
+}
+
+form {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 4px;
+  background-color: var(--main-bg-color);
+}
+
+form > p {
+  font-size: 1.5rem;
+}
+
+.form-item {
+  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  /* align-items: center; */
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* .form-item::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+} */
+hr.hr_2px {
+  border: none;
+  height: 4px;
+  background-color: #ddd;
+}
+
+hr.hr_1px {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+}
+.form-item > label:first-child {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  flex: 20%;
+}
+
+.form-item > input, .form-item > textarea {
+  width: 100%;
+  padding: 1rem 1.8rem;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-color: var(--input-bg);
+}
+
+
+
+textarea {
+  font-family: inherit;
+  font-size: 1.4rem;
+  resize: vertical;
+}
+
+textarea:placeholder-shown {
+  font-size: 1.4rem;
+}
+
+.form-item > input:focus, .form-item > textarea:focus {
+  border: 2px solid var(--input-border-focus);
+  background-color: var(--input-bg-focus);
+}
+
+.form-item > button, .form-item > .btn {  
+  display: inline-block;
+  text-decoration: none;
+  
+  margin: 0 2rem;
+  padding: 1rem 3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+.form-item > button:hover, .form-item > .btn:hover {
+  opacity: 0.8;
+}
+
+.form-item > .btn-type1, .form-item > .btn-danger{
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.form-item > .btn-type2 {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.form-item > .btn-type2:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  opacity: 1;
+}
+
+.form-item > .btn-danger {
+  background-color: transparent;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+.form-item > .btn-danger:hover {
+  background-color: var(--danger-color);
+  color: #ffffff;
+  opacity: 1;
+}
+
+
+
+.btn-file {
+  flex: 40%;
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: var(--input-bg);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn-file * {
+  cursor: pointer;
+}
+
+
+.btn-file:hover {
+  background-color: var(--input-bg-focus);
+}
+
+#img-container {
+  width: 100%;
+  --spacing: 2rem;
+  --column: 4;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--spacing));
+  margin-bottom: calc(-1 * var(--spacing));
+}
+
+#img-container > * {
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+  width: calc((100% / var(--column)) - var(--spacing));
+}
+
+.img-item {
+  width: 100%;
+  height: 15rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+[type=radio] {
+  transform: scale(1.5);
+  margin-right: 1rem;
+}
+
+.input-container {
+  flex: 80%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container > * {
+  margin-bottom: 1rem;
+}
+
+.option_container {
+  width: 100%;
+}
+
+.option_container select, .option_container input[type=text] {
+  width: 80%;
+  padding: 1rem 1.8rem;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-color: var(--input-bg);
+}
+
+.option_container select:focus, .option_container input[type=text]:focus {
+  border: 2px solid var(--input-border-focus);
+  background-color: var(--input-bg-focus);
+}
+
+.option_container option {
+  padding: 1rem 1.8rem;
+}
+
+.option_container option:disabled {
+  background-color: #ddd;
+}
+
+.option_container option:disabled {
+  background-color: #ddd;
+}
+
+.option_container i {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-left: 2rem;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.option_container i:hover {
+  opacity: 0.8;
+}
+
+.tag_container input {
+  width: 80%;
+  padding: 1rem 1.8rem;
+  border: none;
+  outline: none;
+}
+
+.tag_container i {
+  font-size: 1.6rem;
+  color: var(--danger-color);
+}

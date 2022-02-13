@@ -1,0 +1,41 @@
+form ul {
+  font-size: 1.5rem;
+}
+.option_container {
+  width: 100%;
+  flex-direction: column;
+}
+.option_container > input[type=number] {
+  width: 30%;
+  margin-top: 1rem;
+  padding: 1rem 1.8rem;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-color: var(--input-bg);
+}
+
+.option_container > input[type=number]:focus {
+  border: 2px solid var(--input-border-focus);
+  background-color: var(--input-bg-focus);
+}
+
+select {
+  width: 100%;
+  padding: 1rem 1.8rem;
+  outline: none;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  background-color: var(--input-bg);
+}
+
+select:hover {
+  border: 2px solid var(--input-border-focus);
+  background-color: var(--input-bg-focus);
+}
+
+.label-filter {
+  display: inline-block;
+  font-size: 1.5rem; 
+  margin-bottom: 1rem;
+}
